@@ -1,0 +1,44 @@
+.container{
+    display:flex;
+    background-color: #202eb3;
+    color: white;   
+    border: 2px solid black;
+    width:100%;
+    align-items: center;
+    display:inline-block;
+}
+
+img{
+    height: 7%;
+    width: 7%;
+    margin-left: 0.8%;
+    margin-top: 1%;
+    float: left;
+}
+.airline{
+    display:flex;
+    flex-direction: row;
+    margin-right: 10%;
+    margin-left: 29%;
+    display: inline;
+}
+.head{
+    font-size:35px;    
+    font-family: monospace;
+    line-height: 350%;
+    margin-right: auto;
+    margin-left: auto;
+ }
+
+button{
+    border-radius: 10px;
+    border:1px solid white;
+    padding: 10px;
+    cursor: pointer; 
+    margin-left: 0.3%; 
+    width: 7%;    
+    border: 2px solid black;
+}
+.navigate{    
+    display: inline;
+}

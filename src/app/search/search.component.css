@@ -1,0 +1,76 @@
+
+  .header {
+    padding: 20px;
+    justify-content: left;
+    font-size: 20px;
+    height: 15%;
+    border-radius: 75px;
+    color: rgb(52, 82, 82);
+    margin-top: 8%;
+    margin-left: 13%;
+    width: 72%;
+    box-shadow: 20px 20px 20px #aaaaaa;
+   
+  }
+  select{
+    border:1px solid black;
+    border-radius: 10px;
+  }
+
+.search{
+  font-size: x-large;
+  padding:20px;
+  border-radius: 20px;
+}
+
+.button{
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+  font-size: x-large;
+  border-radius: 30px;
+  border: 2px solid black;
+  width: 20%;
+  background-color:lightskyblue;
+}
+
+
+.container{
+  justify-content: center;
+  display: flex;
+  width:300%;
+  height: 100px;
+  flex-direction: row;
+  justify-content:space-around;
+  border:2px solid black;
+  margin-left: 18%;
+  border-radius: 5%;
+  margin-bottom:-3%;margin-top: 10%;
+}
+
+.container div{
+  display:flex;
+  flex-direction: column ;
+  justify-content:space-around;
+  
+}
+
+
+.booknow_button{
+  background-color: lightskyblue;
+  width:150%;
+  border-top-left-radius: 40%;
+  padding: 10px 10px 10px 10px;
+  border-radius: 30px;
+  border: 2px solid black;
+  cursor: pointer;
+  
+}
+
+.flights-container
+{
+  margin-left: 4.5%;
+  margin-bottom:10%;
+  margin-top: -2%;
+
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aeroplane Details</title>
+</head>
+<body>
+  <table>
+      
+      <tr *ngFor="let data of flightData">
+
+          <div class="container" >
+           
+          <div >
+            
+            <td>{{data.airlineName}}</td>
+            <td>{{data.flightId}}</td>
+         </div >
+
+          <div>
+          <td>{{data.source}}</td>
+          <td>{{data.departureTime}}</td>
+         </div>
+
+
+        <div>  
+        <td>{{data.destination}}</td>
+          <td>{{data.arrivalTime}}</td>
+          </div>
+
+        <div>
+          <td>{{data.basePrice}}</td>
+         </div>
+
+        <div>
+        <td> <input type="button" value="Book Now" class="booknow_button" (click)="loadBookingPage(data)"></td>
+        </div>
+        </div>
+      </tr>
+  </table> 
+</body>
+<button (click)="load()">Flights</button>
+</html>
+
+ 

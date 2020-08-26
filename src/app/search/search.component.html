@@ -1,0 +1,66 @@
+
+<form [formGroup]="addForm" (ngSubmit)="loadFlightDetails()" method="GET" class="h1">
+<div class="header" style="border: 2px solid; padding-top: 5%;">
+    Source:
+  <select formControlName="source" required style=" height: 30px; ">
+    <option *ngFor="let loc of Location">{{loc}}</option>
+  </select>&nbsp;
+  
+
+  Destination:
+  <select formControlName="destination" required style=" height: 30px; margin-left:1px;">
+    <option *ngFor="let loc of Location">{{loc}}</option>
+  </select> 
+  &nbsp;&nbsp;
+
+  
+    Departure date:
+  <input formControlName="departureDate" type="date"  value="Departure Date" style=" height: 30px; border:1px solid black; border-radius: 10px;" required/>
+  
+
+  Travellers:
+  <select formControlName="count" style=" height: 30px;"> 
+    <option *ngFor="let num of Travellers">{{num}}</option>
+  </select>
+
+  Class:
+  <select formControlName="class" style="margin-left: 10px; height: 30px;"  required>
+  <option *ngFor="let trav of Class">{{trav}}</option>   
+  </select>
+  <br>
+<br>
+<div style="text-align: center;" class="search"> 
+  <input type="submit" value="Search" class="button">
+  </div>
+ </div>
+</form>
+
+<div *ngIf="data" class="flights-container" style="margin-top:4%;">
+<h2 style="margin-left: 40%;">Flight Details</h2>
+<div class="flights-container">
+<table>
+ <tr *ngFor="let data of flightData">
+    <div class="container">
+      <div>
+        <td><b>{{data.airlineName}}</b></td>
+        <td>{{data.flightId}}</td>
+     </div>
+     <div>
+        <td><b>{{data.source}}</b></td>
+        <td>{{data.arrivalTime}}</td>
+     </div>
+     <div>  
+        <td><b>{{data.destination}}</b></td>
+        <td>{{data.departureTime}}</td>
+     </div>
+     <div>
+       <td><b>Base Price</b></td>
+        <td>{{data.basePrice}}</td>
+     </div>
+    <div>
+       <td><input type="button" style="font-weight: bold;" value="Book Now" class="booknow_button" (click)="loadBookingPage(data)"></td>
+    </div>
+    </div>
+  </tr>
+</table> 
+</div>
