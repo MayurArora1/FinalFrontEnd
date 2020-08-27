@@ -24,6 +24,11 @@ export class UserService {
   getUserName(userId: number){
     return this.http.get(this.baseUrl+userId);
   }
+  checkEmail(user:User){
+    var url="http://localhost:9090/hello";
+    return this.http.post(url,user);
+
+  }
  
   
 }

@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { FormGroup, FormBuilder} from '@angular/forms';
 import { UserService } from '../user.service';
 import { AppComponent } from '../app.component';
+import { User } from "src/app/user";
 
 
 @Component({
@@ -35,6 +36,11 @@ export class RegisterComponent implements OnInit {
       password: ['']
     });
    }
+   user=new User;
+   sendEmail(){
+    this.userService.checkEmail(this.user).subscribe
+    (data => console.log(data));
+  }
 
     onSubmit() {
     let credential = {"emailId": this.addForm.controls.emailId.value, "password":this.addForm.controls.password.value};
@@ -58,6 +64,7 @@ export class RegisterComponent implements OnInit {
         localStorage.setItem("userId", this.result)
         localStorage.setItem("userName",this.addForm.controls.firstName.value)
         this.parent.ngOnInit();
+        this.sendEmail();
         this.router.navigate(['search']);
       });
       }
