@@ -21,7 +21,7 @@ const routes: Routes = [
   {path:"addflights",component:AddFlightsComponent},
   {path:"ticketInformation", component:TicketinformationComponent},
   {path:"userprofile",component:UserprofileComponent},
-  {path:'about',component:AboutComponent},
+  {path:'',component:AboutComponent},
   {
     path:'adminlogin',component:AdminloginComponent
   }

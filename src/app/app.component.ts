@@ -53,6 +53,6 @@ export class AppComponent {
     localStorage.setItem("userId",'0');
     alert('Logout Successful');
     this.ngOnInit();
-    this.router.navigate(['about'])
+    this.router.navigate([''])
   }
 }
