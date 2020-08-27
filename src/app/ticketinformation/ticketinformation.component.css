@@ -8,6 +8,10 @@
     padding: 10px 10px 10px 10px;
     
   }
+  .background{
+      background-image: url("/assets/ticket.jpg");
+      position: relative;
+  }
 table{ 
     border-collapse:separate; 
     border-spacing: 0 13px; 

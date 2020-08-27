@@ -1,3 +1,12 @@
+.background{
+    background-image: url("/assets/Vistara_Banner_Desktop.jpg");
+    background-repeat: no-repeat;
+    height:600px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 .header
 {
    margin-left: 35%;
@@ -9,18 +18,24 @@
    padding-top: 0.2%;
    margin-top: 1%;
    box-shadow: 20px 20px 20px #aaaaaa;
-   background-color:white;   
+   background-color: gray; 
+     
+}
+.op{
+    opacity: 0.8;
 }
 
 h1{
     padding-left: 18%;  
+    
+
 }
 h2{
     background-color: red;
 }
 
 .button1{
-    background-color:rgb(97, 235, 97);
+    background-color:teal;
     padding: 12px;
     width: 80%;
     margin-left: 15%;

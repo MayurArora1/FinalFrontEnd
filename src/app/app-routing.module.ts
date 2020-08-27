@@ -8,6 +8,7 @@ import { RegisterComponent } from './register/register.component';
 import { AddFlightsComponent } from './add-flights/add-flights.component';
 import { TicketinformationComponent} from './ticketinformation/ticketinformation.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
+import { AboutComponent } from './about/about.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path:"register", component:RegisterComponent},
   {path:"addflights",component:AddFlightsComponent},
   {path:"ticketInformation", component:TicketinformationComponent},
-  {path:"userprofile",component:UserprofileComponent}
+  {path:"userprofile",component:UserprofileComponent},
+  {path:'',component:AboutComponent}
 
 ];
 

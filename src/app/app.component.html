@@ -1,10 +1,10 @@
 <div class="container">
     <div>
-        <a href="/search"><img src="assets/img/airline-logo.jpg" ></a>
+        <a href="/search"><img src="./assets/air2.jpg" style="width:55px;height:55px;"></a>
     </div>
 
 <div class="airline">
-    <b class="head">Airline Reservation</b>   
+    <b class="head">AirFuselage</b>   
 </div> 
 
 <div *ngIf="userLoggedIn==1" class="navigate">
@@ -21,3 +21,48 @@
    
 </div>
 <router-outlet></router-outlet>
+
+<div class="footer">
+    <div class="footer-content">
+
+      <div class="footer-section about">
+        <h2 class="logo-text"><span>Air</span>Fuselage</h2>
+        <p>About the airline</p>
+        <div class="contact">
+            <span><i class="fas fa-phone"></i>&nbsp; 123-456-789</span>
+            <span><i class="fas fa-envelope"></i>&nbsp; airfuselage@gmail.com</span>
+        </div>
+        <div class="socials">
+          <a href="#" class="social"><img src="./assets/facebook.jpg" style="width: 60px;height:60px;"></a>
+          <a href="#" class="social"><img src="./assets/instagram.jpg" style="width: 60px;height:60px;"></a>
+          <a href="#" class="social"><img src="./assets/twitter.png" style="width: 60px;height:60px;"></a>
+          <a href="#" class="social"><img src="./assets/youtube.png" style="width: 60px;height:60px;"></a>
+
+        </div>
+      </div>
+      <div class="footer-section links">
+        <h2>Quick Links</h2>
+        <br>
+        <ul class="newul">
+          <li><a>ABOUT US</a></li>
+          <li><a >MILES&SMILES</a></li>
+          <li><a>TERMS & CONDITIONS</a></li>
+        </ul>
+      
+      </div>
+      <div class="footer-section Contact-form">
+      <h2>Contact us</h2>
+      <br>
+      <form>
+        <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+        <textarea name="message" class="text-input contact-input" placeholder="Your message here..."></textarea><br>
+        <button type="submit" class="email" > send</button>
+        
+         
+      </form>
+    </div>
+  </div>
+    <div class="footer-bottom">
+      &copy; AirFuselage </div>
+  </div>  
+  

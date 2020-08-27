@@ -18,6 +18,7 @@ import { UserService } from './user.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TicketinformationComponent } from './ticketinformation/ticketinformation.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { UserprofileComponent } from './userprofile/userprofile.component';
     LoginComponent,
     AddFlightsComponent,
     TicketinformationComponent,
-    UserprofileComponent
+    UserprofileComponent,
+    AboutComponent
    
   ],
   imports: [
