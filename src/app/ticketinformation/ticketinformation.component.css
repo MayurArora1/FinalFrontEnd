@@ -9,9 +9,10 @@
     
   }
   .background{
-      background-image: url("/assets/pages1.jpg");
+      /* background-image: url("/assets/pages1.jpg"); */
+      background-color: wheat;
       position: relative;
-      height: 500px;
+      height: auto;
   }
 table{ 
     border-collapse:separate; 
