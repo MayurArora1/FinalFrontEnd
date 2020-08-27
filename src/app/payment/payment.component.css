@@ -1,3 +1,16 @@
+.background{
+background-image: url("/assets/cd.jpg");
+background-repeat: no-repeat;
+-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px;
+
+}
+.top{
+    padding: 30px;
+}
 input[type=text],[type=password] {
     width: 93%;
     margin-bottom: 5%;

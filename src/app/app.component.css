@@ -219,13 +219,12 @@
   }
 
 .container{
-    display:flex;
+    
     background-color: cornsilk;
     color: black;   
-    border: 2px solid black;
     width:100%;
-    align-items: center;
     display:inline-block;
+    position: relative;
 }
 
 img{
@@ -244,18 +243,18 @@ img{
     padding-top: 20px;
 }
 .head{
-    font-size:35px;    
+    font-size:40px;    
     line-height: 200%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 180px;
-    padding-left: 20px;
+    padding-right: 150px;
+    text-align: left;
     
  }
 
 button{
     border-radius: 10px;
-    border:1px solid white;
+    background-color: orange;
     padding: 10px;
     cursor: pointer; 
     margin-left: 0.3%; 

@@ -1,11 +1,15 @@
-.bg-img {
-    background-image: url("/assets/t7.jpg");
+.myslides {
+    background-image: url("/assets/businessClassbg.jpg");
     background-color: #cccccc;
     height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    color: white;
+    padding-top: 170px;
+    padding-left: 90px;
+    font-size: 40px;
   }
   
   /* Add styles to the form container */

@@ -1,6 +1,7 @@
 <div class="background">
+  <div class='top'>
 <form [formGroup]="addForm" (ngSubmit)="loadFlightDetails()" method="GET" class="h1">
-<div class="header" style="border: 2px solid; padding-top: 5%;">
+<div class="header" >
     Source:
   <select formControlName="source" required style=" height: 30px; ">
     <option *ngFor="let loc of Location">{{loc}}</option>
@@ -34,7 +35,8 @@
   </div>
  </div>
 </form>
-
+</div>
+</div>
 <div *ngIf="data" class="flights-container" style="margin-top:4%;">
 <h2 style="margin-left: 40%;">Flight Details</h2>
 <div class="flights-container">
@@ -63,5 +65,4 @@
     </div>
   </tr>
 </table> 
-</div>
 </div>

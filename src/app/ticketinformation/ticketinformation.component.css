@@ -9,8 +9,9 @@
     
   }
   .background{
-      background-image: url("/assets/ticket.jpg");
+      background-image: url("/assets/pages1.jpg");
       position: relative;
+      height: 500px;
   }
 table{ 
     border-collapse:separate; 
