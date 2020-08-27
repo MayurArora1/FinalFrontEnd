@@ -31,14 +31,23 @@ input[type=text],[type=password] {
 
 .login_container{
    
-   float:left;
+   /* float:left;
    margin-top: 7%;
    width:25%;
    border: 1px solid black;
    border-radius: 4%;
    padding-bottom: 3%;
    padding-left: 2%;
-   margin-left: 37%;
+   margin-left: 37%; */
+   padding: 25px 25px 30px 25px;
+   width: 350px;
+   margin: auto;
+   background: #444;
+   background: rgba(0, 0, 0, 0.3);
+   -moz-border-radius: 0 0 4px 4px;
+   -webkit-border-radius: 0 0 4px 4px;
+   border-radius: 0 0 4px 4px;
+   text-align: left;
    box-shadow: 10px 10px 10px #aaaaaa;
 }
 

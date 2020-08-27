@@ -50,4 +50,6 @@ selectedSeats = new Array();
   bookSeat(seatDetails: any){
     return this.http.post(this.baseUrl+"seats",seatDetails)
   }
+
+  
 }

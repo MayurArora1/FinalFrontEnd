@@ -43,6 +43,7 @@ export class TicketinformationComponent implements OnInit {
     if(confirm("Are you sure to cancel?")){
     this.service.cancelTicket(ticketNumber).subscribe(data =>{
       this.ngOnInit();
+      this.router.navigate(['search']);
     })
   }
   }

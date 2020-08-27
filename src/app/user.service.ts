@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { User } from './user';
+import { AdminLogin } from "./adminlogin/AdminLogin";
+import { Observable } from "rxjs";
+import { AdminLoginStatus } from "./adminlogin/AdminLoginStatus";
 
 @Injectable({
   providedIn: 'root'
@@ -29,6 +32,9 @@ export class UserService {
     return this.http.post(url,user);
 
   }
- 
-  
+
+  loginAdmin(adminlogin: AdminLogin):Observable<AdminLoginStatus>{
+    var url="http://localhost:9090/adminlogin";
+    return this.http.post<AdminLoginStatus>(url,adminlogin);
+  }
 }

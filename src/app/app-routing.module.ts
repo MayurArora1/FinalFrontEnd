@@ -9,6 +9,7 @@ import { AddFlightsComponent } from './add-flights/add-flights.component';
 import { TicketinformationComponent} from './ticketinformation/ticketinformation.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { AboutComponent } from './about/about.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
 
 
 const routes: Routes = [
@@ -20,7 +21,10 @@ const routes: Routes = [
   {path:"addflights",component:AddFlightsComponent},
   {path:"ticketInformation", component:TicketinformationComponent},
   {path:"userprofile",component:UserprofileComponent},
-  {path:'',component:AboutComponent}
+  {path:'',component:AboutComponent},
+  {
+    path:'adminlogin',component:AdminloginComponent
+  }
 
 ];
 

@@ -19,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { TicketinformationComponent } from './ticketinformation/ticketinformation.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { AboutComponent } from './about/about.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { AboutComponent } from './about/about.component';
     AddFlightsComponent,
     TicketinformationComponent,
     UserprofileComponent,
-    AboutComponent
+    AboutComponent,
+    AdminloginComponent
    
   ],
   imports: [

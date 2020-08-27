@@ -64,7 +64,7 @@ export class RegisterComponent implements OnInit {
         localStorage.setItem("userId", this.result)
         localStorage.setItem("userName",this.addForm.controls.firstName.value)
         this.parent.ngOnInit();
-        this.sendEmail();
+        // this.sendEmail();
         this.router.navigate(['search']);
       });
       }

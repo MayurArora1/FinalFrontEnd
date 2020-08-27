@@ -27,15 +27,15 @@ export class PaymentComponent implements OnInit {
   result:any;
   bookResult: any;
   onSubmit(){
-    // let paymentDetails = {"cardNumber": this.paymentForm.controls.cardNumber.value,
-    //                       "expiryDate": this.paymentForm.controls.expiryDate.value,
-    //                       "cvv": this.paymentForm.controls.cvv.value,
-    //                       "accountBalance": JSON.parse(localStorage.getItem("ticketDetails")).totalCost };
+     let paymentDetails = {"cardNumber": this.paymentForm.controls.cardNumber.value,
+                           "expiryDate": this.paymentForm.controls.expiryDate.value,
+                           "cvv": this.paymentForm.controls.cvv.value,
+                           "accountBalance": JSON.parse(localStorage.getItem("ticketDetails")).totalCost };
 
-    let paymentDetails = {"cardNumber": 1111222233334444,
-                          "expiryDate": "12/23",
-                          "cvv": "123",
-                          "accountBalance": JSON.parse(localStorage.getItem("ticketDetails")).totalCost };
+    // let paymentDetails = {"cardNumber": 1111333322,
+    //                       "expiryDate": "12/23",
+    //                       "cvv": "123",
+    //                       "accountBalance": JSON.parse(localStorage.getItem("ticketDetails")).totalCost };
 
     let ticketDetails = JSON.parse(localStorage.getItem("ticketDetails"));
     let flightDetails = JSON.parse(localStorage.getItem("flightDetails"));

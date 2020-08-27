@@ -1,11 +1,11 @@
-*, *:before, *:after {
+ *, *:before, *:after {
     box-sizing: border-box;
   }
   
   html {
     font-size: 16px;
   }
-  
+/*  
   .plane {
     margin-top: 3%;
     margin-left:35%;
@@ -14,11 +14,26 @@
     border: 2px solid black;
     border-radius: 10px;
     float: left;
+  } */
+
+  .plane {
+    margin: 40px auto;
+    max-width: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
   }
+  
   .confirm{
-    float: right;
+    /* float: right;
     margin-right: 15%;
-    margin-top: 5%;
+    margin-top: 5%; */
+    margin-top: 80px;
+	background-color: #FFFFFF;
+	width: fit-content;
+	height: fit-content;
+	margin-left:200px;
+	border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
   }
 
   .details{
