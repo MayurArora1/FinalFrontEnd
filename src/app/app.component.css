@@ -237,7 +237,7 @@ img{
 .airline{
     display:flex;
     flex-direction: row;
-    margin-right: 10%;
+    margin-right: 5%;
     margin-left: 29%;
     display: inline;
     padding-top: 20px;
@@ -257,7 +257,7 @@ button{
     background-color: orange;
     padding: 10px;
     cursor: pointer; 
-    margin-left: 0.3%; 
+    margin-left: 0.5%;
     width: 7%;    
     border: 2px solid black;
 }

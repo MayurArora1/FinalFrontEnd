@@ -45,6 +45,10 @@ export class AppComponent {
     this.router.navigate(['login'])
   }
 
+  AdminLogin() {
+    this.router.navigate(['adminlogin']);
+  }
+
   logout(){
     localStorage.setItem("userId",'0');
     alert('Logout Successful');

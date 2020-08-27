@@ -12,7 +12,7 @@
 </div>
 
 <div class="button_class" *ngIf="userLoggedIn==0" class="navigate">
-<b style="margin-right: 1%;">Hello {{userName}}!</b><button (click)="loadRegister()" style="margin-right: 1%;" >Register</button> <button (click)="loadLogin()" >Login</button>
+<b style="margin-right: 1%;">Hello {{userName}}!</b><button (click)="loadRegister()" style="margin-right: 1%;" >Register</button> <button (click)="loadLogin()" >UserLogin</button> <button (click)="AdminLogin()" >AdminLogin</button>
 </div>
 
 <div *ngIf="userLoggedIn==-1" class="navigate">
