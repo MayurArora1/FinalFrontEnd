@@ -24,18 +24,16 @@ export class PaymentComponent implements OnInit {
     })
   }
 
-  result:any;
+  result: any;
   bookResult: any;
-  onSubmit(){
-     let paymentDetails = {"cardNumber": this.paymentForm.controls.cardNumber.value,
-                           "expiryDate": this.paymentForm.controls.expiryDate.value,
-                           "cvv": this.paymentForm.controls.cvv.value,
-                           "accountBalance": JSON.parse(localStorage.getItem("ticketDetails")).totalCost };
+  onSubmit() {
+    let paymentDetails = {
+      "cardNumber": this.paymentForm.controls.cardNumber.value,
+      "expiryDate": this.paymentForm.controls.expiryDate.value,
+      "cvv": this.paymentForm.controls.cvv.value,
+      "accountBalance": JSON.parse(localStorage.getItem("ticketDetails")).totalCost
+    };
 
-    // let paymentDetails = {"cardNumber": 1111333322,
-    //                       "expiryDate": "12/23",
-    //                       "cvv": "123",
-    //                       "accountBalance": JSON.parse(localStorage.getItem("ticketDetails")).totalCost };
 
     let ticketDetails = JSON.parse(localStorage.getItem("ticketDetails"));
     let flightDetails = JSON.parse(localStorage.getItem("flightDetails"));
@@ -49,20 +47,22 @@ export class PaymentComponent implements OnInit {
     ticketDetails.status = "Booked";
     localStorage.setItem("ticketDetails", JSON.stringify(ticketDetails))
 
-    this.service.getPaymentConfirmation(paymentDetails).subscribe(data=>{
-      this.result= data
-      if(this.result!=null){
-        this.service.bookTicket(JSON.parse(localStorage.getItem("ticketDetails"))).subscribe(data =>{
+    this.service.getPaymentConfirmation(paymentDetails).subscribe(data => {
+      this.result = data
+      if (this.result != null) {
+        this.service.bookTicket(JSON.parse(localStorage.getItem("ticketDetails"))).subscribe(data => {
           this.bookResult = data;
-          if(this.bookResult==1){
-            let seatDetails = {"seats": JSON.parse(localStorage.getItem("selectedSeats")),
-                                "userId": ticketDetails.passengerId,
-                                "flightId": ticketDetails.flightId}
-            this.service.bookSeat(seatDetails).subscribe(data=>{
+          if (this.bookResult == 1) {
+            let seatDetails = {
+              "seats": JSON.parse(localStorage.getItem("selectedSeats")),
+              "userId": ticketDetails.passengerId,
+              "flightId": ticketDetails.flightId
+            }
+            this.service.bookSeat(seatDetails).subscribe(data => {
               this.router.navigate(['ticketInformation'])
             });
           }
-          });
+        });
       }
     });
   }

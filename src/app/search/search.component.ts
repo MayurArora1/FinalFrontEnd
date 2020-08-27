@@ -31,7 +31,7 @@ export class SearchComponent implements OnInit {
   
   Location: string[] = ['--Select--','Mumbai', 'Bengaluru', 'Delhi','Hyderabad'];
 
-  Travellers:number[]=[0,1,2,3,4,5,6,7,8,9];
+  Travellers:number[]=[1,2,3,4,5];
   Class: string[]=['--Select--','Economy','Business'];
   
   
@@ -80,6 +80,7 @@ export class SearchComponent implements OnInit {
   }
   else{
     alert('Please Login to Book Flights!');
+   
   }
 }
 }

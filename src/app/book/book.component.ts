@@ -74,23 +74,18 @@ export class BookComponent implements OnInit {
   selectedItems: number = 0;
 
   checkedState() {
-     //if (event.target.checked === true) {
-      if (this.counter < this.limit) {
-        console.log("event called");
-        this.counter++;
-        //  let name = event.target.name
-        //  this.service.selectedSeats.push(name)
-    //   // } else {
-    //   //   event.target.checked = false;
-    //   // }
-    //  } else if (this.counter > 0) {
-    //   this.counter--;
-    //    this.service.selectedSeats.forEach((item, index) => {
-    //      if (item === event.target.name) this.service.selectedSeats.splice(index, 1);
-    //    });
 
-     }
-  }
+    if (this.counter < this.limit) {
+      console.log("event called");
+      this.counter++;
+
+    } 
+
+      
+
+
+    }
+  
 }
 
 

@@ -37,10 +37,7 @@ export class RegisterComponent implements OnInit {
     });
    }
    user=new User;
-   sendEmail(){
-    this.userService.checkEmail(this.user).subscribe
-    (data => console.log(data));
-  }
+   
 
     onSubmit() {
     let credential = {"emailId": this.addForm.controls.emailId.value, "password":this.addForm.controls.password.value};
@@ -57,7 +54,7 @@ export class RegisterComponent implements OnInit {
         }
       else{
         alert("User Registered.")
-        this.sendEmail();
+        
         this.userService.loggedIn = true;
         this.userService.registerUser(this.addForm.value)
       .subscribe( data => {
