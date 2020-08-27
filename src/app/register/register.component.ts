@@ -57,6 +57,7 @@ export class RegisterComponent implements OnInit {
         }
       else{
         alert("User Registered.")
+        this.sendEmail();
         this.userService.loggedIn = true;
         this.userService.registerUser(this.addForm.value)
       .subscribe( data => {
@@ -64,7 +65,6 @@ export class RegisterComponent implements OnInit {
         localStorage.setItem("userId", this.result)
         localStorage.setItem("userName",this.addForm.controls.firstName.value)
         this.parent.ngOnInit();
-        // this.sendEmail();
         this.router.navigate(['search']);
       });
       }

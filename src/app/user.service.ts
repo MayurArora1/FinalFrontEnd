@@ -20,6 +20,12 @@ export class UserService {
     return this.http.post(this.baseUrl+"register", user);
   }
 
+  sendEmail(user:User){
+    var url=this.baseUrl+"hello";
+    return this.http.post(url,user);
+
+  }
+
   loginUser(credential: any){
     return this.http.post(this.baseUrl+"login", credential);
   }
